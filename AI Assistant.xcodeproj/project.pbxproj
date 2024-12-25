@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		08EE3793C3291AA7B47CAD04 /* Pods_AI_Assistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F14177AE6290FF14C40F485 /* Pods_AI_Assistant.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		CEA6B36F2D19964D006000C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D7ADD878C57F4C58F4BED65 /* Pods-AI Assistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AI Assistant.release.xcconfig"; path = "Target Support Files/Pods-AI Assistant/Pods-AI Assistant.release.xcconfig"; sourceTree = "<group>"; };
+		5F14177AE6290FF14C40F485 /* Pods_AI_Assistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AI_Assistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B22D4E95BB83B583FB23D8E0 /* Pods-AI Assistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AI Assistant.debug.xcconfig"; path = "Target Support Files/Pods-AI Assistant/Pods-AI Assistant.debug.xcconfig"; sourceTree = "<group>"; };
 		CEA6B35E2D19964C006000C4 /* AI Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AI Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA6B36E2D19964D006000C4 /* AI AssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AI AssistantTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA6B3782D19964D006000C4 /* AI AssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AI AssistantUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08EE3793C3291AA7B47CAD04 /* Pods_AI_Assistant.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +80,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9616D2E7D015FC41FF672897 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B22D4E95BB83B583FB23D8E0 /* Pods-AI Assistant.debug.xcconfig */,
+				2D7ADD878C57F4C58F4BED65 /* Pods-AI Assistant.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C1ABEACD509A9198BD37EA5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F14177AE6290FF14C40F485 /* Pods_AI_Assistant.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CEA6B3552D19964B006000C4 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +104,8 @@
 				CEA6B3712D19964D006000C4 /* AI AssistantTests */,
 				CEA6B37B2D19964D006000C4 /* AI AssistantUITests */,
 				CEA6B35F2D19964C006000C4 /* Products */,
+				9616D2E7D015FC41FF672897 /* Pods */,
+				C1ABEACD509A9198BD37EA5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +126,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEA6B3822D19964D006000C4 /* Build configuration list for PBXNativeTarget "AI Assistant" */;
 			buildPhases = (
+				3DB7827D3280EFE86C53DE9C /* [CP] Check Pods Manifest.lock */,
 				CEA6B35A2D19964C006000C4 /* Sources */,
 				CEA6B35B2D19964C006000C4 /* Frameworks */,
 				CEA6B35C2D19964C006000C4 /* Resources */,
@@ -111,8 +139,6 @@
 				CEA6B3602D19964C006000C4 /* AI Assistant */,
 			);
 			name = "AI Assistant";
-			packageProductDependencies = (
-			);
 			productName = "AI Assistant";
 			productReference = CEA6B35E2D19964C006000C4 /* AI Assistant.app */;
 			productType = "com.apple.product-type.application";
@@ -134,8 +160,6 @@
 				CEA6B3712D19964D006000C4 /* AI AssistantTests */,
 			);
 			name = "AI AssistantTests";
-			packageProductDependencies = (
-			);
 			productName = "AI AssistantTests";
 			productReference = CEA6B36E2D19964D006000C4 /* AI AssistantTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -157,8 +181,6 @@
 				CEA6B37B2D19964D006000C4 /* AI AssistantUITests */,
 			);
 			name = "AI AssistantUITests";
-			packageProductDependencies = (
-			);
 			productName = "AI AssistantUITests";
 			productReference = CEA6B3782D19964D006000C4 /* AI AssistantUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -230,6 +252,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DB7827D3280EFE86C53DE9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AI Assistant-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEA6B35A2D19964C006000C4 /* Sources */ = {
@@ -390,9 +437,11 @@
 		};
 		CEA6B3832D19964D006000C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B22D4E95BB83B583FB23D8E0 /* Pods-AI Assistant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "AI Assistant/AI Assistant.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AI Assistant/Preview Content\"";
@@ -404,6 +453,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -419,9 +469,11 @@
 		};
 		CEA6B3842D19964D006000C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D7ADD878C57F4C58F4BED65 /* Pods-AI Assistant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "AI Assistant/AI Assistant.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AI Assistant/Preview Content\"";
@@ -433,6 +485,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
